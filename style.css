@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-family: 'Montserrat' !important;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    background-color: rgb(227, 241, 253);
+  }
+
+
+/* NAVIGATION */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100px;
+    background-color:rgb(22, 22, 22);
+    color: rgb(202, 202, 202);
+}
+
+.one {
+    left: 0;
+}
+
+.two {
+    right: 0;
+}
+
+.logo {
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+
+.media {
+    position: absolute;
+    width: 380px;
+    left: -135px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+  
+.media ul {
+    list-style: none;
+}
+  
+.media ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+  
+.media ul li:not(:last-child) {
+    padding-right: 60px;
+}
+
+/* NAVIGATION */
+
+
+/* SECTION 1 */
+
+.shoeTileGrid {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: beige;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.shoeTileGrid div {
+    background-color: aqua;
+}
+
+.shoeTileGrid .one {
+    padding-left: 100px;
+    background-color: beige;
+}
+
+.shoeTileGrid .one .something {
+    height: 100%;
+    width: 100%;
+}
+
+.shoeTileGrid .two {
+    padding-right: 110px;
+    background-color: beige;
+    
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 4fr 2fr;
+}
+
+.shoeTileGrid .two .seven {
+    grid-column: 2 span;
+}
+
+/* SECTION 1 */
+
+.shoeCardContainer {
+    height: auto;
+    background-color: rgb(212, 212, 76);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.shoeCardContainer .card {
+    height: 85vh;
+    width: 960px;
+    margin: auto;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.shoeCardContainer .card .Image {
+    background-color: blue;
+}
+
+.shoeCardContainer .card .cardText {
+    
+}
