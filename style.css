@@ -290,6 +290,11 @@ body {
     color: white;
 }
 
+.textContainer button:hover {
+    transition: 0.5s;
+    background-color: #2391ff;
+}
+
 .shoeCardContainer .card .image {
     display: grid;
     grid-template-columns: 1fr;
