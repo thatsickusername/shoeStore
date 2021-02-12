@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+body {
+    font-family: 'Montserrat' !important;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    background-color: rgb(230, 230, 230);
+  }
+
+
+/* NAVIGATION */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+    z-index: 2;
+    /* visibility: hidden; */
+}
+
+.one {
+    left: 0;
+    
+}
+
+.two {
+    right: 0;
+    /* visibility: hidden; */
+}
+
+.logo {
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+
+.media {
+    position: absolute;
+    width: 380px;
+    left: -135px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+  
+.media ul {
+    list-style: none;
+}
+  
+.media ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+  
+.media ul li:not(:last-child) {
+    padding-right: 60px;
+}
+
+/* NAVIGATION */
+
+
+/* SECTION 1 */
+
+.yourCartPage {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.yourCartPage .one {
+    padding-left: 100px;
+}
+
+.yourCartPage .two {
+    padding-right: 100px;
+}
+
+.yourCartPage .scrollable {
+    height: 100vh;
+    width: 89%;
+    padding: 35px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.yourCartPage .scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.yourCartPage .scrollable::-webkit-scrollbar-track {
+    background: rgb(207, 207, 207);
+}
+   
+.yourCartPage .scrollable::-webkit-scrollbar-thumb {
+    background: rgb(182, 182, 182); 
+    border-radius: 15px;
+}
+  
+.yourCartPage .scrollable::-webkit-scrollbar-thumb:hover {
+    transition: 0.4s;
+    background: rgb(151, 151, 151); 
+}
+
+.yourCartPage .scrollable div {
+    width: 100%;
+    
+}
+
+.scrollable h1 {
+    padding-top: 7%;
+    padding-bottom: 50px;
+    color: rgb(31, 31, 31);
+    font-size: 45px;
+}
+
+.scrollable .cartContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.scrollable .cartContainer .cartCard{
+   
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow:  8px 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yourCartPage .notScrollable {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: 0.5fr 3fr 1fr 3fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 2fr 3fr 1fr 0.2fr;
+}
+
+.yourCartPage .notScrollable div {
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow:  8px 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yourCartPage .notScrollable button{
+    margin: 17px 30px;
+    border: none;
+    font-family: 'Montserrat' !important;
+    border: none;
+    padding: 10px 0;
+    border-radius: 25px;
+    background-color: #0071e3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow:  8px 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.yourCartPage .notScrollable button:hover {
+    transition: 0.3s;
+    background-color: #2391ff;
+    
+}
+
+.shippingInfo {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    
+}
+
+.notScrollable h2 {
+    font-size: 18px;
+    margin: 20px 20px 10px;
+    color:rgb(22, 22, 22);
+    font-weight: 700;
+    
+}
+
+.notScrollable h3 {
+    font-size: 14px;
+    margin: 0px 20px 10px;
+    color: #6e6e73;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.paymentInfo {
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+
+.totalInfo {
+    grid-column: 2/5;
+    grid-row: 4/5;
+}
+
+.shopMore {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.proceed {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+    /* SECTION 1 */
