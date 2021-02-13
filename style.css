@@ -20,6 +20,7 @@ body {
 /* NAVIGATION */
 
 .navigation {
+    
     position: fixed;
     top: 0;
     height: 100vh;
@@ -31,6 +32,10 @@ body {
 
 .one {
     left: 0;
+}
+
+.expanded {
+    width: 300px;
 }
 
 .two {
@@ -49,31 +54,25 @@ body {
 
 .media {
     position: absolute;
-    width: 380px;
-    left: -135px;
-    top: 50%;
-    transform: rotate(-90deg);
-}
-  
-.media ul {
-    list-style: none;
-}
-  
-.media ul li {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
+    width: 100px;
+    height: 100vh;
+    left: 0;
+    top: 0;
 }
 
-.media ul li a {
-   text-decoration: none;
+.media i {
+    margin-top: 50vh;
+    margin-left: 45px;
+    transform:scale(2.2);
+    color: rgb(22, 22, 22);
+}
 
+.media i:hover{
+    transition: 0.3s;
+    color: rgb(82, 82, 82);
 }
-  
-.media ul li:not(:last-child) {
-    padding-right: 60px;
-}
+
+
 
 /* NAVIGATION */
 
@@ -208,7 +207,7 @@ body {
 
 .shoeTileGrid .two .smallShoe img:hover{
     transition: 0.5s;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 }
 
 .shoeTileGrid .two .shoeQuote {
